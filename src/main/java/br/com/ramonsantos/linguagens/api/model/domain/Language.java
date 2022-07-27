@@ -1,4 +1,4 @@
-package br.com.ramonsantos.linguagens.api;
+package br.com.ramonsantos.linguagens.api.model.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -15,6 +15,10 @@ public class Language {
     this.title = title;
     this.image = image;
     this.ranking = ranking;
+  }
+
+  public Language(String title) {
+    this.title = title;
   }
 
   public Language() {
